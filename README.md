@@ -1,51 +1,16 @@
-# React Test Project
+# React + Vite
 
-A modern React application built with modern JavaScript and best practices.
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-## Features
+Currently, two official plugins are available:
 
-- ⚛️ React 18+ with functional components
-- 🎨 Component-based architecture
-- 🔄 State management with hooks
-- 📦 Modular and scalable structure
-- 🎯 Clean and maintainable code
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-## Prerequisites
+## React Compiler
 
-Before you begin, ensure you have the following installed:
+The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
 
-- **Node.js** (v14 or higher)
-- **npm** or **yarn** package manager
+## Expanding the ESLint configuration
 
-## Installation
-
-1. Clone the repository:
-   ```bash
-   git clone <repository-url>
-   cd project-name
-   ```
-
-2. Install dependencies:
-   ```bash
-   npm install
-   ```
-
-## Usage
-
-Start the development server:
-
-```bash
-npm start
-```
-
-The application will open in your browser at `http://localhost:3000`
-
-Build for production:
-
-```bash
-npm run build
-```
-
-## License
-
-This project is licensed under the MIT License - see the LICENSE file for details.
+If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
